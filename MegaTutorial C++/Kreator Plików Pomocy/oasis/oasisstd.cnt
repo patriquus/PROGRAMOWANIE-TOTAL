@@ -1,0 +1,37 @@
+:BASE  C:\Projects\OasisSE\OasisStd.hlp
+1 What is Oasis SE?=IDH_0000000011
+1 Distributed Files=IDH_0000000508
+1 Contact Information=IDH_0000000137
+1 Disclaimer=IDH_68310
+1 Getting Started
+2 Conventions Used=IDH_0000000023
+2 System Requirements=IDH_0000000022
+1 Oasis Components
+2 Toolbars=IDH_0000000013
+2 Topic Tree=IDH_0000000015
+2 Topic Editor=IDH_0000000020
+2 Keyword display=IDH_0000000021
+2 Status Bar=IDH_0000000115
+2 Dialogs
+3 Project Options=IDH_0000000509
+3 Window Settings=IDH_0000000511
+1 Step-by-Step procedures
+2 Creating Topics=IDH_0000000090
+2 Adding Keywords=IDH_0000000091
+2 Inserting a Jump Link=IDH_0000000092
+2 Inserting a Popup Link=IDH_0000000093
+2 Editing Context IDs=IDH_0000000142
+2 Inserting a Bitmap=IDH_0000000682
+2 Compiling it all=IDH_0000000610
+2 Playing AVI Files=IDH_68410
+1 Glossary of terms
+2 Jump Link=IDH_0000000677
+2 Popup Link=IDH_0000000678
+2 Non-Scrolling Region=IDH_0000000680
+2 Topic Node=IDH_0000000679
+2 Target Mode=IDH_0000000681
+1 Project Options Context Help
+2 Default Topic=IDH_68510
+2 Help Title=IDH_68610
+2 Copyright Version Field=IDH_68810
+2 Paste Or Print=IDH_68910

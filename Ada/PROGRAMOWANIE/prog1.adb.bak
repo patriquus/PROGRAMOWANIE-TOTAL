@@ -1,0 +1,14 @@
+with ada.Text_IO, ada.Integer_Text_IO;
+use ada.Text_IO, ada.Integer_Text_IO;
+
+PROCEDURE Prog1 IS
+   A,B,C,G:Integer;
+BEGIN
+   Put("podaj G: ");
+   Get(G);
+   LOOP
+      Put("A: "); Get(A);
+      Put("B "); Get(b);
+        put("C: "); get(c);
+
+END Prog1;

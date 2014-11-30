@@ -1,0 +1,54 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO;
+USE Ada.Text_IO, Ada.Integer_Text_IO;
+
+PROCEDURE Prog2 IS
+   N   : Positive;
+   Min,
+   Max : Integer;
+BEGIN
+   Put("Podaj n: ");
+   Get(N);
+   DECLARE
+      TYPE Tab IS ARRAY (1 .. N) OF Integer;
+      T : Tab;
+
+   BEGIN
+      FOR I IN T'RANGE LOOP   --pobieranie tablicy
+         Get(T(I));
+      END LOOP;
+
+      FOR I IN T'RANGE LOOP      --wyswietlanie tablicy
+         Put(T(I), 0);
+      END LOOP;
+
+      New_Line;
+
+      Min:=integer'last;               --znajdowanie elementu min i max
+      Max:=integer'first;
+      FOR I IN T'RANGE LOOP
+         IF T(I) < Min THEN
+            Min:=T(I);
+         END IF;
+      END LOOP;
+
+      FOR I IN T'RANGE LOOP
+         IF T(I) > Max THEN
+            Max:=T(I);
+         END IF;
+      END LOOP;
+
+      FOR I IN T'First..T'Last-1 LOOP
+         FOR J IN T'First..T'Last LOOP
+            IF (I /= J) THEN
+               if (t(I) /= Min) AND (t(J) /= Min) AND (t(I) /= Max) AND (t(j) /= Max) THEN
+               Put(T(I), 0);
+               Put(", ");
+               Put(T(J), 0);
+               New_Line;
+               END IF;
+               end if;
+         END LOOP;
+      END LOOP;
+   END;
+END Prog2;
+

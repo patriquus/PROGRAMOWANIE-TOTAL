@@ -1,0 +1,212 @@
+1. WSTÊP
+1.1 Wymagania i terminologia
+1.2 Czym jest Windows API?
+1.3 Pliki Windows API
+1.4 Œrodowisko wspieraj¹ce Windows API
+1.5 Dzia³anie aplikacji Windows
+1.6 Ewolucja Windows
+1.7 Flagi
+1.8 Uchwyty i obiektowa natura WinAPI
+1.9 Model zdarzeniowy w aplikacji Windows
+
+2. PODSTAWY
+2.1 Typy zmiennych Windows API
+2.2 Makra Windows API
+2.3 Funkcja g³ówna
+2.4 Budowa okna Windows
+2.5 Hierarhizacja okien
+2.6 Klasa okna
+2.7 Tworzenie okna
+2.8 Pêtla zdazreniowa
+2.9 Procedura zdarzeniowa okna
+2.10 Zdarzenie przerwania pêtli
+2.11 Zdarzenia ¿ycia okna
+2.12 Symulowanie zdarzeñ
+2.13 Komunikat okienkowy
+
+3. OKNA W WINDOWS
+3.1 Stan okna
+3.2 Style
+3.3 Tytu³ okna
+3.4 Pozycja okna
+3.5 Trzeci wymiar "Z"
+3.6 Powierzchnia robocza
+3.11 Sprawdzenia
+-Informacje o oknieGetWindowInfo
+-Efekt migania (AnimateWindow)
+-Dodatkowe dane dla programisty
+
+
+6. OBS£UGA KLAWIATURY
+-Ogólnie o klawiaturze
+-Klawisze wirtulane - praca sterownika(translacja)
+-Unikod w WinAPI
+-Fokus - w³adza nad klawiatur¹
+-Zdarzenie naciœniêcia przycisku
+-Sta³e naciœniêcie przycisku(powtarzenie)
+-Zdarzenie wprowadzenia znaku
+-Sprawdzanie stanu klawisza
+-Symulacja klawiatury(SendInput)
+
+
+7. OBS£UGA MYSZKI
+-Ogólnie o myszce
+-Zdarzenia klikniêcia
+-Wspó³rzêdne klikniêcia(konwersja ClientToScreen ird.)
+-Informacje pomocnicze
+-Mechanizm podwójnego klikniêcia
+-Klikanie na obszar systemowy okna
+-Poruszanie myszk¹
+-Kó³ko
+-W³adza nad myszk¹
+-Kontrolowanie myszki(ograniczenie,pobieranie/ustawianie wspó³rzêdnych)
+-Symulacja myszki
+
+
+8. KONTROLKI I DIALOGI
+-Kontrolka jako okno Windows
+-Tworzenie w³asnej kontrolki(prosty przycisk)
+-Kontrolki systemowe(inicjacja)
+-Przycisk
+-Pole edycji
+-Kontrolka ComboBox
+-Pasek postêpu
+-TrackBar
+-StatusBar
+-Kontrolka ComboBoxEx
+-ToolBar
+-ToolTip
+-ReBar
+-Tree-View
+-ScrollBar i przesuwanie okna
+-Czcionka w kontrolkach
+-Style XP(Luna)
+-Dialogi
+-...
+-Dialog koloru
+
+
+5. GDI
+-Wygl¹d graficzny aplikacji
+-Grafika komputerowa
+-Parametry obrazu rastrowego
+-Obiekty GDI
+-Kontekst urz¹dzenia(tworzenie,pobieranie,usuwanie)
+-Zdarzenie WM_PAINT
+-Figury geometryczne
+-Bitmapy
+-Tekst
+-Regiony
+-Drukowanie
+
+
+9. CZAS W WINDOWS
+-Czas systemowy i lokalny
+-Timery
+-Odliczanie czasu pomiêdzy zdarzeniami(GetTickCount)
+-Wstrzymanie programu(Sleep)
+
+
+10. ZASOBY APLIKACJI
+-Plik zasobów
+-Plik *.manifest w zasobach
+-Umieszczanie plików w zasobach(ikon, kursory, bitmap i RC_FILE)
+-£adowanie Stringów
+-£adowanie bitmap, kursorów i ikon z zasobów
+-£adowanie dowolnych plików z zasobów
+-Zarz¹dzanie zasobami
+-Rysowanie ikon
+-Menu
+-Akcelelatory
+
+
+11. ŒRODOWISKO WINDOWS
+-W³asne komunikaty RegisterMessage
+-W¹tki(wielozadaniowoœæ)
+-Procesy
+-Biblioteki DLL
+-Zarz¹dzanie pamiêci¹
+-Wywo³anie ShellExecute
+-Obs³uga b³êdów Windows API
+
+
+12. ZAPIS I PRZETWARZANIE INFORMACJI
+-Sta³oœæ kodu programu
+-Opcje programu jako dane zewnêtrzne
+-Praca z plikami na dysku
+-Okna dialogowe(wybór œcie¿ki przez u¿ytkownika)
+-Plik jako ci¹g danych(w³asny format pliku, np. konfiguracyjnego)
+-Rejestracja w³asnego rozszerzenia pliku(Update Ikon)
+-Pliki INI
+-Rejestr Windows
+
+
+13. ZAAWANSOWANA PRACA Z OKNAMI
+-Zmiana atrybutów okna i jego klasy
+-Inne okna w systemie
+-Technika subclassingu
+-Regionowe kszta³ty okien
+-Przezroczystoœæ okien
+-Nak³adanie bitmapy na okno
+-Mechanizm okien MDI
+-Klawisz TAB
+-Przesuñ i upuœæ
+-Okno Windows w klasie jêzyka C++
+
+
+14. GDI+
+-Kilka s³ów o GDI+
+-Obiektowoœæ w GDI+
+...
+
+
+15. KOMUNIKACJA MIÊDZY APLIKACJAMI
+-Zdarzenie WM_COMMAND
+-Atomy
+-Schowek Windows(Clipboard)
+-zdarzenie WM_COPYDATA
+-Dynamiczna wymiana danych(DDE)
+
+
+16. MULTIMEDIA
+-S³ówko
+-Odtwarzania muzyki z CD(mciSendString,wysuwanie i wsuwanie)
+-Proste odtworzenie pliku *.wav(sndPlaySound)
+-Kontrolka Animacji plików *.avi
+-RIFF
+-Odtwarzanie pliku *.wav poprzez RIFF
+-Konwersja ACM
+-Formaty stratne
+-S³ówko o bibliotekach DirectX
+-DirectShow
+
+17. ZARZ¥DZANIE PLIKAMI NA DYSKU
+-Kopiowanie, przenoszenie i usuwanie plików
+-Zarz¹dzanuie atrybutami plików
+-Informacje o woluminach
+-Prosty menadŸer plików(DlgDirList)
+-Poruszanie siê poœród plików(FindFirstFile,FindNextFile)
+
+
+18. INTERNET
+-Technologia TCP/IP
+-Klient a serwer
+-Gniazda w Windowsie
+-W³asny protokó³ sieciowy
+-Protokó³ FTP
+
+
+19. HAKI
+-Szpiedzy w Windowsie
+-Zak³adanie haków
+-Zak³adanie haków globalnych
+-Key loggery
+
+
+20. POZOSTA£E
+-W³asna ikonka w zasobniku systemowym
+-Podszywanie siê za zasobnik systemowy
+-RichEdit
+-Uzyskiwanie informacji o systemie(CreateToolhelp32Snapshot,GetUserName,GetComputerName,GetKeyboardType,GetSystemInfo,GetVersionEx,GetWindowsDirectory,GetSystemDirectory,GetTempPath)
+-Uzyskiwanie wymiarów - Funkcja GetSystemMetrics()
+-Konfiguracja Windowsa - funkcja SystemParametersInfo()

@@ -1,0 +1,122 @@
+%& --translate-file=cp1250pl
+\documentclass{article}
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\usepackage{multirow}
+\begin{document}
+\section{Tabelki}
+
+\textbf{Przyk³ad 1.} 
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|l|c|r|}\hline
+L.p. & Imiê & Nazwisko \\
+\hline
+1. & Anna & Kowal \\\hline
+2. & Miros³aw & Leniwy \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Podpis tabeli}
+\end{table}
+
+
+
+\textbf{Przyk³ad 2.}
+
+\begin{tabular}{|r|l||c|rrr|c|c|}\hline
+Position & Club & Games & W & T & L & Goals & Points \\ \hline\hline
+1 & Amesville Rockets & 33 & 19 & 13 & 1 & 66:31 & 51:15 \\ \hline
+2 & Borden Comets & 33 & 18 & 9 & 6 & 65:37 & 45:21 \\ \hline
+3 & Clarkson Changers & 33 & 17 & 7 & 9 & 70:44 & 41:25 \\ \hline
+4 & Gatsby Tigers & 33 & 15 & 7 & 11 & 52:37 & 37:29 \\ \hline
+5 & Quincy Gians & 33 & 7 & 5 & 21 & 40:89 & 19:47\\ \hline
+6 & Ralston Regulars & 33 & 3 & 11 & 19 & 37:74 & 17:49 \\\hline
+\end{tabular}
+
+
+\vspace{2cm}
+
+\textbf{Przyk³ad 3.} 
+
+\begin{tabular}{|r|l||rrr|rl|rl||c|} \hline
+\multicolumn{10}{|c|}{\bfseries 1st Regional Soccer League --- 
+Final Results 1994/95}\\ \hline
+&\itshape Club &\itshape W &\itshape T &\itshape L  
+&\multicolumn{2}{c|}{\itshape Goals}
+&\multicolumn{2}{c||}{\itshape Points}& \itshape Remarks \\ \hline \hline
+1 & Amesville Rockets & 19 & 13 & 1 & 66&31 & 51&15 & League Champs \\ \hline
+2 & Borden Comets & 18 & 9 & 6 & 65&37 & 45&21 & \\ 
+\cline{1-9}
+3 & Clarkson Changers & 17 & 7 & 9 & 70&44 & 41&25 & Medium Teams\\ 
+\cline{1-9}
+4 & Gatsby Tigers & 15 & 7 & 11 & 52&37 & 37&29 & \\ \hline
+5 & Quincy Gians & 7 & 5 & 21 & 40&89 & 19&47 & \\ \hline
+6 & Ralston Regulars & 3 & 11 & 19 & 37&74 & 17&49 & The last one \\\hline
+\end{tabular}
+
+
+
+
+\vspace{.5cm}
+\textbf{Przyk³ad 4.} Wstawianie w kolumnie d³u¿szego tekstu.
+\vspace{.5cm}
+
+\begin{tabular}{rlcrrrcp{3cm}c}
+Position & Club & Games & W & T & L & Goals & Punkty zdobyte we wszystkich meczach \\ [0.2ex]
+1 & Amesville Rockets & 33 & 19 & 13 & 1 & 66:31 & 51:15 \\
+2 & Borden Comets & 33 & 18 & 9 & 6 & 65:37 & 45:21 \\
+3 & Clarkson Changers & 33 & 17 & 7 & 9 & 70:44 & 41:25 \\
+4 & Gatsby Tigers & 33 & 15 & 7 & 11 & 52:37 & 37:29 \\
+5 & Quincy Gians & 33 & 7 & 5 & 21 & 40:89 & 19:47\\
+6 & Ralston Regulars & 33 & 3 & 11 & 19 & 37:74 & 17:49
+\end{tabular}
+
+\vspace{.5cm}
+\textbf{Przyk³ad 5.} Scalanie komórek.
+\vspace{.5cm}
+
+\begin{tabular}{|l|l|c|c|l|l|}\hline
+Nazwa owocu & Kolor & Gatunek & Kszta³t & Waga & Cena za kg \\\hline
+Jab³ka & ¿ó³te & I & kulisty & 20 dkg. & 3 z³.\\\hline
+Jab³ka & czerwone & II & kulisty & 15 dkg. & 2.50 z³.\\\hline
+Gruszki & ¿ó³te &\multicolumn{2}{c}{trudno okreœliæ} & 25 dkg. & 3.50 z³.\\\hline
+Gruszki & czerwone & I & wyd³u¿ony & 18 dkg. & 4 z³\\\hline
+\end{tabular}
+
+\vspace{.5cm}
+\textbf{Przyk³ad 6.}
+
+\begin{tabular}{|l|l|c|c|l|l|}\hline
+Nazwa owocu & Kolor & Gatunek & Kszta³t & Waga/szt. & Cena za kg \\\hline
+Jab³ka & ¿ó³te & I & kulisty & 20 dkg. & 3 z³.\\\hline
+Jab³ka & czerwone & II & kulisty & 15 dkg. & 2.50 z³.\\\hline
+\multicolumn{6}{|c|}{Inne owoce sezonowe} \\\hline
+Œliwki & czerwone & I & wyd³u¿ony & 5 dkg. & 4 z³.\\\hline
+\end{tabular}
+
+\vspace{.5cm}
+\textbf{Przyk³ad 7.}
+
+
+\begin{tabular}{|l|l|l|} \hline
+\multicolumn{3}{|c|}{Schedulers} \\ \hline
+\multirow{3}{*}{Immediate} & RR & Round Robin \\
+& EF & Earliest First \\
+& LL & Lightest Loaded \\ \hline
+\multirow{4}{*}{Batch} & MM & Min-Min \\ 
+& MX & Max-Min \\
+& DL & Dynamic Level \\ 
+& RC & Relative Cost \\ \hline
+\multirow{4}{*}{Evolutionary} & PN & This paper \\
+& ZO & Genetic Algorithm\\
+& TA & Tabu search~\cite{GLOV1986j}\\
+& SA & Simlulated Annealing \\ \hline
+\end{tabular}
+
+\end{document}
+

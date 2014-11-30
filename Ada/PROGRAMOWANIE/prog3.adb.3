@@ -1,0 +1,104 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO;
+USE Ada.Text_IO, Ada.Integer_Text_IO;
+
+PROCEDURE Prog3 IS
+
+   TYPE Tab IS ARRAY (Integer RANGE <>) OF Integer;
+
+   PROCEDURE Pobierz (
+         T :    OUT Tab) IS
+   BEGIN
+      FOR I IN T'RANGE LOOP
+         Get(T(I));
+      END LOOP;
+   END Pobierz;
+
+   PROCEDURE Wypisz (
+         T : IN     Tab) IS
+   BEGIN
+      FOR I IN T'RANGE LOOP
+         Put(T(I), 0);
+      END LOOP;
+   END Wypisz;
+
+   PROCEDURE OdwrocPoczatek (
+         T : IN OUT Tab;
+         K :        Positive) IS
+      Pom,
+      X , dlugosc  : Integer;
+   BEGIN
+      IF K > T'Length THEN
+         Dlugosc:=T'Length;
+      ELSE
+         dlugosc:=k;
+      END IF;
+
+      X:=dlugosc;
+
+      FOR I IN T'First..(dlugosc/2) LOOP
+
+         Pom:=T(I);
+         T(I):=T(X);
+         T(X):=Pom;
+         X:=X-I;
+
+      END LOOP;
+   END Odwrocpoczatek;
+
+-------FUNKCJA--------------------
+----------------------------------
+   FUNCTION Usun(T: Tab; N: Positive) RETURN Tab IS
+      Ile, bool:integer;
+      X:Tab(1..T'Length);
+
+   BEGIN
+      Ile:=0;
+      bool:=0;
+      FOR I IN T'First..T'Last LOOP
+         FOR J IN T'First..J+N LOOP
+            IF J mod 2 = 0 THEN
+               Bool:=1
+      END LOOP;
+
+
+      FOR I IN T'First..T'Last-1 LOOP
+
+
+            x(i):=t(i);
+            ile:=ile+1;
+            END IF;
+            end loop;
+      END LOOP;
+
+      return x;
+   END usun;
+
+   ----------------------------------
+   --1 2 3 5 7 8
+   ----------------------------------
+   K,n,dlugosc : Positive;
+
+BEGIN
+   Put("Dlugosc tablicy: ");
+   Get(dlugosc);
+   Put("Podaj k: ");
+   Get(K);
+      Put("Podaj n: ");
+   Get(n);
+   DECLARE
+      T : Tab (1 .. dlugosc);
+   BEGIN
+      Put("Pobieranie tablicy: ");
+      Pobierz(T);
+      Put("Wypisywanie tablicy: ");
+      Wypisz(T);
+--      Put("Odwroc Poczatek: ");
+--      OdwrocPoczatek(T,K);
+      Put("Wypisz Usun: ");
+      Wypisz(Usun(T,N));
+
+
+
+   END;
+END Prog3;
+

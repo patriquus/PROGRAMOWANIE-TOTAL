@@ -1,0 +1,72 @@
+V "GNAT Lib v2013"
+M P W=b
+A -gnatwu
+A -gnat05
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV SPARK
+
+U prog2%b		prog2.adb		036eca7a NE OO SU KU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20130417131022 3ffc8e18
+D a-except.ads		20130417131018 10fcae55
+D a-finali.ads		20130417131020 52ecdc1b
+D a-inteio.ads		20130417131020 f64b89a4
+D a-ioexce.ads		20130417131020 8b9de6cd
+D a-stream.ads		20130417131020 2ca4ee37
+D a-tags.ads		20130417131022 6c0509d0
+D a-textio.ads		20130417131022 386df5d4
+D a-tiinio.ads		20130417131022 aa04e5d6
+D a-unccon.ads		20130417131022 f9eb8f06
+D interfac.ads		20130417131026 cb4a8015
+D i-cstrea.ads		20130417131026 8128536b
+D prog2.adb		20140130144500 cd48b60a
+D system.ads		20130417131036 5fc8ae56
+D s-crtl.ads		20130417131028 dfcfca61
+D s-exctab.ads		20130417131028 66e51330
+D s-ficobl.ads		20130417131028 55a71d43
+D s-finmas.ads		20130417131028 b95bb341
+D s-finroo.ads		20130417131028 4ff27390
+D s-parame.ads		20130417131032 b6e20cc0
+D s-pooglo.ads		20130417131032 542f33d0
+D s-soflin.ads		20130417131032 24c8153c
+D s-stache.ads		20130417131032 596fc1b4
+D s-stalib.ads		20130417131032 f78bcf95
+D s-stoele.ads		20130417131032 facd7d98
+D s-stoele.adb		20130417131032 afc5dc80
+D s-stopoo.ads		20130417131032 7b8fbeee
+D s-traent.ads		20130417131032 5221ee41
+D s-unstyp.ads		20130417131034 6ae15c76
+D s-wchcon.ads		20130417131034 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6 1r19 2r5 2r18
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|45] 13|1w23 2r22
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 2r9
+166U14*New_Line 13|24s7 47s16
+242U14*Put 13|9s4 45s16
+X 9 a-tiinio.ads
+55U14*Get 13|10s4[4|18] 17s10[4|18]
+65U14*Put 13|21s10[4|18] 44s16[4|18] 46s16[4|18]
+X 13 prog2.adb
+4U11*Prog2 4b11 53l5 53t10
+5i4 N{positive} 10m8 12r31
+6i4 Min{integer} 26m7 29r20 30m13 43r28 43r46
+7i4 Max{integer} 27m7 35r20 36m13 43r64 43r82
+12A12 Tab(integer)<integer> 13r11
+13a7 T{12A12} 16r16 17m14 17r14 20r16 21r14 28r16 29r13 30r18 34r16 35r13
+. 36r18 40r16 40r25 41r19 41r28 43r20 43r38 43r56 43r74 44r20 46r20
+16i11 I{integer} 17r16
+20i11 I{integer} 21r16
+28i11 I{integer} 29r15 30r20
+34i11 I{integer} 35r15 36r20
+40i11 I{integer} 42r17 43r22 43r58 44r22
+41i14 J{integer} 42r22 43r40 43r76 46r22
+

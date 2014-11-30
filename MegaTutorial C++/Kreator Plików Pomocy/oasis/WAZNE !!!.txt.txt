@@ -1,0 +1,10 @@
+Program nie bêdzie dzia³a³ je¿eli w opcjach nie podasz mu œcie¿ki do kompilatora plików pomocy.
+Je¿eli masz Delphi to jest on w:
+
+[KatalogDelphi]\Help\Tools\hcrtf.exe
+
+A je¿eli Buildera:
+
+[KatalogBCB]\Help\Tools\hcrtf.exe
+
+:-] To chyba tyle. ¯ycze bardzo ciekwaych plików pomocy - Kacper Cieœla (comboy)

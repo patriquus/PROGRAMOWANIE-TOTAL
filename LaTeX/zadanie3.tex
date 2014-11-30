@@ -1,0 +1,60 @@
+%& --translate-file=cp1250pl
+\documentclass{article}
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\newtheorem{twierdzenie}{Twierdzenie}
+\newtheorem{dowod}{DOWÓD.}
+
+\begin{document}
+\section{Matematyka}
+\begin{twierdzenie}[Nierównoœæ Schwarza]
+Niech $z_1, z_2, \ldots, z_n \in \mathbb{C}$ oraz $\varsigma_1, \varsigma_2, \ldots, \varsigma_n \in \mathbb{C}$. Wówczas
+\begin{equation*}
+\left\vert
+\sum^n_{j=1}z_j\overline{\varsigma_j}
+\right\vert^2
+\leq \sum^n_{j=1}\vert z_j \vert^2
+\cdot
+\sum^n_{j=1}\vert \varsigma_j \vert^2.
+\end{equation*}
+\end{twierdzenie}
+
+Dowód. Oznaczamy $A=\sum^n_{j=1} \vert z_j \vert^2$, $B=\sum^n_{j=1} \vert \varsigma_j \vert^2$, $C=\sum^n_{j=1} z_j\overline{\varsigma}_j$. Oczywiscie $A \geq 0$, $B \geq 0$.
+
+Je¿eli $B=0$, to $\varsigma_1 = \varsigma_2 = \ldots = \varsigma_n=0$ i nierównoœæ jest wtedy trywialna.
+
+Za³ó¿my, ¿e $B < 0$. Mamy
+\begin{align*}
+0 &\leq \sum^n_{j=1} \left\vert Bz_j-C \varsigma_j \right\vert ^2 = \sum^n_{j=1}(Bz_j-C\varsigma_j)(B\overline{z_j}-\overline{C}\overline{\varsigma_j}= \\
+&= \sum^n_{j=1} (B^2 \left\vert z_j \right\vert ^2 - BC \overline{z_j} \varsigma_j - B \overline{C} z_j\overline{\varsigma_j}+\left\vert C \right\vert ^2 \left\vert \varsigma_j \right\vert ^2)=\\
+&= B^2 \sum^n_{j=1} \left\vert z_j \right\vert ^2 - BC \overline{\sum^n_{j=1}z_j\overline{\varsigma_j}} - B \overline{C} \sum^n_{j=1}z_j\overline{\varsigma_j} + \left\vert C \right\vert ^2 \sum^n_{j=1} \left\vert \varsigma_j \right\vert ^2 = \\
+&= B^2A-B \left\vert C \right\vert ^2 - B \left\vert C \right\vert ^2 + \left\vert C \right\vert ^2 B = B^2A - B \left\vert C \right\vert ^2 = B(BA - \left\vert C \right\vert ^2).
+\end{align*}
+Zatem $BA - \left\vert C \right\vert ^2 \geq 0, (bo B>0), tzn. \left\vert C \right\vert ^2 \leq A \cdot B$.
+\begin{twierdzenie}
+a) Jeœli $\alpha > 0$, to $$\lim_{n \to \infty} n^{\alpha} = +\infty, \lim_{n \to \infty} \frac{1}{n^{\alpha}} = 0$$
+b) \begin{equation*}
+\lim_{n \to \infty} x^n =
+\left\{
+\begin{array}{ccc}
+0, & gdy & \vert x \vert < 1 \\
+1, & gdy & x = 1 \\
++\infty, & gdy & x > 1.
+\end{array}
+\right.
+\end{equation*}
+c) Jeœli $A>0$, to $\lim_{n \to \infty} \sqrt[n]{a}=1$ \\
+d) $\lim_{n \to \infty} \sqrt[n]{n}=1$
+\end{twierdzenie}
+\begin{dowod}
+a) Niech $M>0$ bêdzie dowolnie ustalone i niech $n_0=[M^{1/\alpha}]+1$, gdzie $[x]$ lub $E(x)$ oznacza najwiêksz¹ liczbê ca³kowit¹ nie przekraczaj¹c¹ $x$. Wówczas dla wszystkich $n$ takich, ¿e $n \geq n_0 > M^{1/\alpha}$ bêdziemy mieli $n^{\alpha} > M$, a wiêc $\lim_{n \to \infty}n^{\alpha}=+\infty$. Druga równoœæ wynika z pierwszej oraz z tw. 25.
+
+b) Przypuœæmy najpierw, ¿e $\vert x \vert < 1$. Udowodnimy, ¿e
+\begin{equation}
+\lim_{n \to \infty} x^n=0
+\end{equation}
+\end{dowod}
+\end{document}

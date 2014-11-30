@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Break", "Break.vcproj", "{E191BFD0-CC26-41F0-8D3B-0CD0A3654D29}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E191BFD0-CC26-41F0-8D3B-0CD0A3654D29}.Debug.ActiveCfg = Debug|Win32
+		{E191BFD0-CC26-41F0-8D3B-0CD0A3654D29}.Debug.Build.0 = Debug|Win32
+		{E191BFD0-CC26-41F0-8D3B-0CD0A3654D29}.Release.ActiveCfg = Release|Win32
+		{E191BFD0-CC26-41F0-8D3B-0CD0A3654D29}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

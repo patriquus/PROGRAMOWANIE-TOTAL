@@ -1,0 +1,12 @@
+with ada.Text_IO, ada.Integer_Text_IO;
+use ada.Text_IO, ada.Integer_Text_IO;
+
+PROCEDURE Prog2 IS
+   TYPE Tab IS ARRAY (1..N) OF Integer;
+      t:tab;
+
+BEGIN
+
+
+END Prog 2;
+

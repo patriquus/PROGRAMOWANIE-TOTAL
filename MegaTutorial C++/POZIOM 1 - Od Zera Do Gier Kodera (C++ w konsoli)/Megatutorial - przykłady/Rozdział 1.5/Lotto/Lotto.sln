@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lotto", "Lotto.vcproj", "{E8B14505-CD41-4366-A6D3-C723404458EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E8B14505-CD41-4366-A6D3-C723404458EF}.Debug.ActiveCfg = Debug|Win32
+		{E8B14505-CD41-4366-A6D3-C723404458EF}.Debug.Build.0 = Debug|Win32
+		{E8B14505-CD41-4366-A6D3-C723404458EF}.Release.ActiveCfg = Release|Win32
+		{E8B14505-CD41-4366-A6D3-C723404458EF}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

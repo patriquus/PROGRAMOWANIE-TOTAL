@@ -1,0 +1,75 @@
+%& --translate-file=cp1250pl
+\documentclass{article}
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\author{Patryk Gradys}
+\title{Matematyka}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Równania}
+Rownanie diofantyczne
+\begin{equation}\label{eq:wz1}
+x^2-yz-1=0
+\end{equation}
+zasluguje na uwage mimo swojej prostoty. Intrygujacy jest mianowicie zwiazek
+miedzy rozwiazaniami tego równania w liczbach naturalnych a operacja najwiekszego
+wspólnego dzielnika, Na fakt ten zwrócil uwage prof. A. Schnitzel, który w
+artykule pisze miedzy innymi: Nie sa znane zadne wzory zalezne od skonczenie
+wielu niezaleznych parametrów, które dawalyby wszystkie rozwiazania równania
+(\ref{eq:wz1}) i nie zawieralaby w jakiejs formie operacji najwiekszego wspólnego dzielnika.
+O ile zawiera dopusci sie te operacje, wystarczy przyjac
+
+\begin{equation}
+x=t_1, \indent y=t_2,t_1^2-1),  \indent z=\frac{(t_1^2-1)}{(t_2,t_1^2-1)}
+\end{equation}
+
+Aby wyznaczyc wzory rozwiazan równania (\ref{eq:wz1}), czyniac zadosc wyzej postawionym
+warunkom, wystarczyloby zatem zdefiniowac operacje najwiekszego
+wspólnego dzielnika za pomoca odpowiednich dzialan na liczbach calkowitych.
+W niniejszej nocie zdefiniujemy te operacje i wyznaczymy wzory rozwiazan równania
+(\ref{eq:wz1}) czyniace zadosc wyzej postawionym warunkom.
+
+Niech $m, n$ beda danymi liczbami naturalnymi. W zbiorze liczb calkowitych
+okreslamy funkcje $f_m^{(n)}$:
+
+\begin{equation*}
+f_m^{(n)}(x)=(x-m) \cdot (x-2m) \cdot \ldots \cdot (x-nm).
+\end{equation*}
+
+Funkcja ta ma nastepujaca wlasnosc: dla kazdej liczby naturalnej $k \le m$
+
+\begin{equation}
+f_m^{(n)}(kn)=0 \Leftrightarrow [m,n] \mid kn,
+\end{equation}
+
+gdzie $[m, n]$ jest najmniejsza wspólna wielokrotnoscia liczb naturalnych $m$ i $n$.
+Uwaga: przez liczby naturalne rozumiemy tu liczby calkowite wieksze od zera.
+
+Niech z kolei $F$ bedzie funkcja okreslona w zbiorze liczb calkowitych nastepujacym
+wzorem
+
+\begin{equation*}
+F(x)=\frac{1}{2}+\frac{1}{2}(-1)^{2^{x^2}}.
+\end{equation*}
+
+Tak okreslona funkcja ma wlasnosc:
+
+\begin{equation}
+F(x)=\left\{
+\begin{array}{ccc}
+1, & \mathrm{gdy} & x \ne 0 \\
+0, & \mathrm{gdy} & x = 0
+\end{array}
+\right.
+\end{equation}
+
+\end{document}
+
+
+

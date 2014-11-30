@@ -1,0 +1,26 @@
+WITH Ada.Text_IO, Ada.Integer_Text_IO;
+USE Ada.Text_IO, Ada.Integer_Text_IO;
+
+PROCEDURE Prog1 IS
+   A,
+   B,
+   C,
+   G,
+   Suma,
+   Ile  : Integer;
+BEGIN
+   Put("podaj G: ");
+   Get(G);
+
+   LOOP
+      Put("Podaj liczbe: "); Get(A);
+      EXIT WHEN A=0;
+
+      C:=B;
+      B:=A;
+   END LOOP;
+
+
+
+
+END Prog1;

@@ -1,0 +1,368 @@
+%& --translate-file=cp1250pl
+\documentclass[leqno]{book}
+
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsthm}
+
+\newtheorem{lemat}{\indent Lemat }
+\newtheorem{dowod}{Dowód}
+\newtheorem{twierdzenie}{Twierdzenie}
+\newtheorem*{wniosek}{Wniosek}
+
+\newtheorem*{cwiczenie}{\indent \normalfont{ÆWICZENIE}}
+
+\theoremstyle{remark}
+\newtheorem*{uwaga}{\indent U w a g a}
+
+\setcounter{equation}{22}
+\setcounter{twierdzenie}{7}
+\setcounter{page}{71}
+\setcounter{paragraph}{3}
+
+\renewcommand{\theparagraph}{\indent \S\ \arabic{paragraph}.}
+\renewcommand{\qedsymbol}{}
+\renewcommand{\proof}{\indent D o w ó d.}
+\renewcommand{\thefootnote}{\arabic{footnote})}
+\setcounter{secnumdepth}{4}
+
+\begin{document}
+
+\paragraph{Dowód twierdzenia Fermata o rozk³adzie liczb pierwszych formy 4k+1 na sumê dwu kwadratów.} Udowodnimy przede wszystkim
+
+\begin{lemat}
+Je¿eli $p$ jest liczb¹ pierwsz¹ i istniej¹ dwie liczby ca³kowite niepodzielne przez $p$, których suma kwadratów jest podzielna przez $p$, to $p$ jest sum¹ dwu kwadratów.
+\end{lemat}
+\begin{proof}
+Poniewa¿ suma kwadratów liczb ca³kowitych jest zawsze nieujemna, a zerem mo¿e byæ tylko wtedy, gdy te liczby s¹ zerami, wiêc suma kwadratów dwu liczb niepodzielnych przez $p$ jest zawsze liczb¹ naturaln¹. W myœl za³o¿enia lematu, istnieje zatem liczba naturalna podzielna przez $p$ i rozk³adaj¹ca siê na sumê dwu kwadratów niepodzielnych przez $p$. Takich liczb naturalnych mo¿e byæ wiêcej. Niech $n$ bêdzie najmniejsz¹ z nich. Jest wiêc przy pewnym naturalnym $m$:
+
+\begin{equation} \label{eq:w23}
+n=mp,
+\end{equation}
+\begin{equation} \label{eq:w24}
+n=a^2+b^2,
+\end{equation}
+gdzie $a$ i $b$ s¹ dwiema liczbami ca³kowitymi niepodzielnymi przez $p$.
+
+Jak wiemy z $\S$ 2, mo¿emy wyznaczyæ liczby $\alpha$ i $\beta$, spe³niaj¹ce warunki:
+$$\alpha \equiv a(mod\ p), \qquad \beta \equiv b (mod\ p),$$
+\begin{equation} \label{eq:w25}
+|\alpha|\leq\frac{p}{2}, \qquad |\beta|\leq\frac{p}{2}.
+\end{equation}
+
+St¹d:
+\begin{equation} \label{eq:w26}
+\begin{gathered}
+\alpha^2+\beta^2 \equiv a^2+b^2(mod\ p), \\
+\alpha^2+\beta^2 \leq \frac{p^2}{4}+\frac{p^2}{4}=\frac{p^2}{2} < p^2.
+\end{gathered}
+\end{equation}
+
+Wobec niepodzielnoœci liczb $a$ i $b$ przez $p$, kongruencje (\ref{eq:w25}) dowodz¹, ¿e $\alpha$ i $\beta$ s¹ te¿ niepodzielne przez $p$, a kongruencja (\ref{eq:w26}) dowodzi, ¿e suma kwadratów $\alpha^2+\beta^2$ jest podzielna przez $p$.
+
+Równie¿ wiêc liczba $\alpha^2+\beta^2$ jest naturalna, podzielna przez $p$ i rozk³ada siê na sumê kwadratów dwu liczb niepodzielnych przez $p$. Skoro jednak $n$ jest najmniejsz¹ z takich liczb naturalnych, to 
+$$n \leq \alpha^2 + \beta^2,$$
+a zatem w myœl (\ref{eq:w23}) i nierównoœci (\ref{eq:w26}) $$mp<p^2,$$
+sk¹d
+\begin{equation} \label{eq:w27}
+m<p.
+\end{equation}
+
+Je¿eli udowodnimy, ¿e $m=1$, to lemat bêdzie dowiedziony, gdy¿ w myœl wzorów (\ref{eq:w23}) i (\ref{eq:w24}) bêdziemy mieli wtedy $$p=a^2+b^2.$$
+
+Przypuœæmy, ¿e $m \neq 1$. Poniewa¿ $m$ jest liczb¹ naturaln¹ spe³miaj¹c¹ nierównoœæ (\ref{eq:w27}), wiêc
+\begin{equation} \label{eq:w28}
+1<m<p.
+\end{equation}
+
+Wyznaczmy liczby $a_1$ i $b_1$, spe³niaj¹ce warunki:
+\begin{equation} \label{eq:w29}
+a_1 \equiv a(mod\ m), \qquad b_1 \equiv b(mod\ m),
+\end{equation}
+
+\begin{equation} \label{eq:w30}
+|a_1| \leq \frac{m}{2}, \qquad |b_1| \leq \frac{m}{2}.
+\end{equation}
+
+Warunki te daj¹:
+\begin{equation} \label{eq:w31}
+a_1^2+b_1^2 \equiv a^2+b^2(mod\ m),
+\end{equation}
+\begin{equation} \label{eq:w32}
+a_1^2+b_1^2 \leq \frac{m^2}{4} + \frac{m^2}{4}= \frac{m^2}{2} < m^2.
+\end{equation}
+
+Kongruencja (\ref{eq:w31}) wskazuje wobec wzorów (20) i (19), ¿e liczba $a_1^2+b_1^2$ jest podzielna przez $m$; nierównoœæ zaœ (\ref{eq:w32}) dowodzi, ¿e liczba ta jest mniejsza ni¿ $m^2$. Mo¿emy wiêc przyj¹æ
+\begin{equation} \label{eq:w33}
+a_1^2+b_1^2=lm,
+\end{equation}
+gdzie $l$ jest liczb¹ ca³kowit¹ mniejsz¹ ni¿ $m$.
+
+Liczba $l$ nie mo¿e byæ zerem, gdy¿ wtedy by³oby $a_1=b_1=0$, wskutek czego liczby $a_1$ i $b_1$, a wiêc na mocy kongruencji (\ref{eq:w29}) równie¿ liczby $a$ i $b$, by³yby podzielne przez $m$; pisz¹c wówczas $a=tm$ i $b=um$, mielibyœmy w myœl (\ref{eq:w24}), $n=(t^2+u^2)m^2$, sk¹d w myœl (\ref{eq:w23}) $p=(t^2+u^2)m$ i liczba pierwsza $p$ posiada³aby dzielnik $m$ spe³niaj¹cy nierównoœci (\ref{eq:w28}), co niemo¿liwe.
+
+Liczba $l$ jest wiêc naturalna i zachodzi nierównoœæ
+
+\begin{equation} \label{eq:w34}
+0<l<m.
+\end{equation}
+
+WeŸmy teraz pod uwagê to¿samoœæ
+\begin{equation} \label{eq:w35}
+(a^2+b^2)(a_1^2+b_1^2)=(aa_1+bb_1)^2+(ab_1-ba_1)^2.
+\end{equation}
+
+Lewa strona tej to¿samoœci przedstawia w myœl (\ref{eq:w24}), (\ref{eq:w23}) i (\ref{eq:w33}) liczbê
+\begin{equation} \label{eq:w36}
+mp \cdot lm=lpm^2.
+\end{equation}
+
+Obliczamy jej stronê praw¹. Mno¿¹c pierwsz¹ z kongruencji (\ref{eq:w29}) przez $a$, a drug¹ przez $b$, otrzymujemy po dodaniu stronami $aa_1+bb_1 \equiv a^2+b^2(mod\ m)$, sk¹d $aa_1+bb_1 \equiv 0(mod\ m)$ czyli
+\begin{equation} \label{eq:w37}
+aa_1+bb_1=cm,
+\end{equation}
+gdzie $c$ jest liczb¹ ca³kowit¹.
+
+Mno¿¹c zaœ pierwsz¹ z kongruencji (\ref{eq:w29}) przez $b$ i odejmuj¹c od drugiej, pomno¿onej przez $a$, otrzymujemy $ab_1-ba_1 \equiv 0 (mod\ m)$, co dowodzi, ¿e
+\begin{equation} \label{eq:w38}
+ab_1-ba_1=dm,
+\end{equation}
+gdzie $d$ jest liczb¹ ca³kowit¹.
+
+To¿samoœæ (\ref{eq:w32}) daje wiêc na mocy (\ref{eq:w36}), (\ref{eq:w37}), (\ref{eq:w38})
+$$lpm^2=c^2m^2+d^2m^2,$$
+sk¹d po podzieleniu obu stron przez liczbê dodatni¹ $m^2$ otrzymujemy
+\begin{equation} \label{eq:w39}
+lp=c^2+d^2.
+\end{equation}
+
+Wzór ten wskazuje, ¿e liczby $c$ i $d$ s¹ albo obie podzielne przez $p$, albo obie niepodzielne przez $p$. Gdyby obie liczby $c$ i $d$ by³y podzielne przez $p$, to przynajmniej jedna z nich by³aby co do bezwzglêdnej wartoœci nie mnieszja od $p$, gdy¿ obie zerem byæ nie mog¹, skoro $l>0$. Lecz wtedy kwadrat jej by³by nie mniejszy od $p^2$, a zatem $c^2+d^2 \geq p^2$, sk¹d $l \geq p$ wbrew nierównoœciom (\ref{eq:w34}) i (\ref{eq:w27}).
+
+Wzór  (\ref{eq:w39}) przedstawia wiêc rozk³ad liczby $lp$ na sumê kwadratów dwu liczb ca³kowitych niepodzielnych przez $p$. Skoro jednak $lp$ jest wielokrotnoœci¹ naturaln¹ liczby $p$, wiêc w myœl definicji liczby $n$ musia³oby byæ $n \leq lp$ czyli na mocy  (\ref{eq:w23}) $mp \leq lp$, sk¹d $m \leq l$ wbrew nierównoœci  (\ref{eq:w34}).
+
+Tym sposobem przypuszczenie, ¿e $m \neq 1$, doprowadza do sprzecznoœci i lemat zosta³ udowodniony.
+\end{proof}
+\begin{twierdzenie}[Fermata]
+Ka¿da liczba pierwsza formy $4k+1$ rozk³ada siê i to w jeden tylko sposób na sumê dwu kwadratów.
+\end{twierdzenie}
+
+\begin{proof}
+Niech $p$ bêdzie liczb¹ pierwsz¹ formy $4k+1$. Jak dowiedliœmy w $\S$ 2, istnieje dla lcizby pierwszej $p$ formy $4k+1$ taka liczba ca³kowita $x$, ¿e $x^2+1$ jest podzielne przez $p$. Wiemy te¿, ¿e je¿eli suma kwadratów dwu liczb ca³kowitych jest podzielna przez liczbê pierwsz¹ $p$, to albo obie te liczby s¹ podzielne przez $p$, albo ¿adna z nich nie jest podzielna przez $p$.
+Wobec niepodzielnoœci liczby 1 przez $p$ wnosimy st¹d, ¿e $p$ jest dzielikiem sumy kwadratów dwu liczb niepodzielnych przez $p$, mianowicie $x^2+1^2$ \footnote{Mo¿na dowieœæ, opieraj¹c siê na twierdzeniu Wilsona, ¿e liczba $(1 \cdot 2 \cdot 3 \cdot \ldots \cdot \frac{p-1}{2})^2+1$ jest podzielna przez $p$ (gdy $p$ jest liczb¹• pierwsz¹ formy $4k+1$). Por. \S 3, æwiczenie 26.}. W myœl udowodnionego lematu liczba $p$ sama jest wiêc sum¹ dwu kwadratów:
+$$p=a^2+b^2.$$
+
+Pozostaje do udowodnienia, ¿e istnieje tylko ejden taki rozk³ad, je¿eli nie zwracaæ uwagi na porz¹dek oraz na znaki liczb $a$ i $b$.
+
+Przypuœæmy, ¿e $p$ ma dwa rozk³ady na sumê dwu kwadratów:
+\begin{equation} \label{eq:w40}
+p=a^2+b^2, \qquad p=a_1^2+b_1^2.
+\end{equation}
+
+¯adna z liczb $a$ i $b$ nie mo¿e byæ zerem, gdy¿ liczba pierwsza $p$ nie jest kwadratem ¿adnej liczby ca³kowitej. Poniewa¿ zaœ nie zwracamy uwagi na znaki liczb $a$ i $b$, wiêc mo¿emy za³o¿yæ, ¿e obie s¹ dodatnie. S¹ one przy tym wzglêdnie pierwsze, gdy¿ ka¿dy ich wspólny dzielnik jest zarazem dzielnikiem liczby $p=a^2+b^2$. Takie same uwagi mo¿emy zrobiæ co do liczb $a_1$ i $b_1$.
+
+WeŸmy teraz pod uwagê to¿samoœci:
+\begin{equation} \label{eq:w41}
+\begin{gathered}
+p^2=(a^2+b^2)(a_1^2+b_1^2)=(aa_1+bb_1)^2+(ab_1-ba_1)^2= \\
+=(ab_1+ba_1)^2+(aa_1-bb_1)^2, \\ \\
+(aa_1+bb_1)(ab_1+ba_1)=(a^2+b^2)a_1b_1+(a_1^2+b_1^2)ab= \\
+=p((a_1b_1+ab).
+\end{gathered}
+\end{equation}
+
+Iloczyn
+\begin{equation} \label{eq:w42}
+(aa_1+bb_1)(ab_1+ba_1)
+\end{equation}
+jest wiêc podzielny przez liczbê pierwsz¹ $p$, sk¹d wnosimy, ¿e przynajmniej jeden z jego czynników jest podzielny przez $p$.
+
+Je¿eli pierwszy czynnik iloczynu (\ref{eq:w42}) jest podzielny przez $p$, to poniewa¿ jest on liczb¹ naturaln¹, wiêc $aa_1+bb_1 \geq p$ i przeto $(aa_1+bb_1)^2 \geq p^2$, wobec czego pierwszy z rozk³adów (\ref{eq:w41}) liczby $p^2$ na sumê dwu kwadratów daje
+$$ab_1-ba_1=0 \qquad \textrm{ czyli } \qquad ab_1=ba_1.$$
+
+Poniewa¿ $(a_1b_1)=1$ wiêc $a$ jest podzielne przez $a_1$, a poniewa¿ $(a, b)=1$, wiêc $a_1$ jest podzielne przez $a$. Jest zatem $a=a_1$, wobec czego równoœæ $ab_1=ba_1$ daje $b_1=b$. Rozk³ady (\ref{eq:w40}) s¹ zatem w tym przypadku identyczne.
+
+Je¿eli zaœ pierwszy czynnik iloczynu (\ref{eq:w32}) nie jest podzielny przez $p$, to w takim razie drugi czynnik musi byæ podzielny przez $p$, a zatem $ab_1+ba_1 \geq p$. Jak wy¿ej, wnosimy z drugiego z rozk³adów (\ref{eq:w41}), ¿e wtedy $aa_1-bb_1=0$ czyli $aa_1=bb_1$. Poniewa¿ $(a, b)=1$, wiêc $a_1$ jest podzielne przez $b$, a poniewa¿ $(a_1,b_1)=1$, wiêc $b$ jest podzielne przez $a_1$. Jest zatem $a_1=b$, wobec czego równoœæ $aa_1=bb_1$ daje $b_1=a$. W tym przypadku rozk³ady ró¿ni³yby siê tylko porz¹dkiem sk³adników.
+
+Tym samym dowód twierdzenia 2 zosta³ zakoñczony.
+\end{proof}
+\begin{uwaga}
+Je¿eli uwa¿aæ za ró¿ne takie rozk³ady $x^2+y^2$, które siê ró¿ni¹ b¹dŸ porz¹dkiem, b¹dŸ znakami liczb $x$ i $y$, to - jak ³atwo widzieæ - ka¿da liczba pierwsza $p$ formy $4k+1$ bêdzie mia³a dok³adnie 8 rozk³adów na sumê dwu kwadratów, a mianowicie:
+\begin{gather*}a^2+b^2, \qquad a^2+(-b)^2, \qquad (-a)^2+b^2, \qquad (-a)^2+(-b)^2, \\
+b^2+a^2, \qquad (-b)^2+a^2, \qquad b^2+(-a)^2, \qquad (-b)^2+(-a)^2.
+\end{gather*}
+
+¯e wszystkie te rozk³ady s¹ ró¿ne, wynika st¹d, ¿e $a$ i $b$ s¹ ró¿nymi liczbami naturalnymi.
+
+Oto rozk³ady na sumê dwu kwadratów dla wszystkich liczb pierwszych formy $4k+1$, zawartych w pierwszej setce:
+\begin{gather*}5=1^2+2^2, \qquad 13=2^2+3^2, \qquad 17=1^2+4^2, \qquad 29=2^2+5^2 \\
+37=1^2+6^2, \qquad 41=4^2+5^2, \qquad 53=2^2+7^2, \qquad 61=5^2+6^2, \\
+73=3^2+8^2, \qquad 89=5^2+8^2, \qquad 97=4^2+9^2.
+\end{gather*}
+
+Maj¹c dwa ró¿ne rozk³ady liczby nieparzystej $n$ na sumê dwu kwadratów:
+$$n=a^2+b^2=c^2+d^2,$$
+gdzie $a \geq b > 0$, $a > c$ i $c \geq d > 0$, potrafimy roz³o¿yæ $n$ na dwa czynniki naturalne wiêksze od 1. Niech bowiem
+
+$$\delta = (a-c, d-b), \qquad a-c=r \delta i d-b=s \delta .$$
+
+Wówczas $(r,s)=1$, a poniewa¿ $a^2-c^2=d^2-b^2$, wiêc $r(a+c)=s(d+b)$; wnosimy st¹d, ¿e $a+c=st$, gdzie $t$ jest liczb¹ naturaln¹. £atwo sprawdziæ, ¿e
+$$n=\frac{(r^2+s^2)(t^2+ \delta^2)}{4}$$
+i ¿e ka¿dy z obu czynników licznika przewy¿sza 4. St¹d otrzymuje siê od razu wspomniany rozk³ad liczby $n$.
+Czytelnik zechce zastosowaæ tê metodê np. do rozk³adów:
+$$8^2+1^2=7^2+4^2, \qquad 9^2+2^2=7^2+6^2, \qquad 179^2+2^2=178^2+19^2.$$
+\end{uwaga}
+\paragraph{Iloœæ liczb pierwszych formy 4k+1, 4k+3, 3k+2 i 8k+1.} Nasuwa siê pytanie: ile jest liczb pierwszych formy $4k+1$? Gdyby siê okaza³o, ¿e jest ich skoñczenie wiele, to udowodnione twierdzenie Fermata straci³oby na swej wartoœci.
+
+Zanim siê zajmiemy tym zagadnieniem, udowodnimy
+\begin{lemat} ¯adna liczba formy $4k+3$ (pierwsza lub z³o¿ona) nie rozk³ada siê na subê dwu kwadratów.
+\end{lemat}
+\begin{proof}
+Oczywiœcie wystarczy udowodniæ, ¿e ¿adna suma $a^2+b^2$ nie daje przy dzieleniu przez 4 reszty 3.
+
+Je¿eli obie liczby $a$ i $b$ s¹ parzyste, albo obie nieparzyste, to - jak ³atwo widzieæ - suma kwadratów jest liczb¹ parzyst¹ i nie daje przy dzieleniu przez 4 reszty 3.
+
+Je¿eli zaœ jedna z liczb $a$ i $b$ jest parzysta, a druga nieparzysta, np. $a=2t$ i $b=2u+1$, gdzie $t$ i $u$ s¹ liczbami ca³kowitymi, to
+$$a^2+b^2=(2t)^2+(2u+1)^2=4t^2+4u^2+4u+1,$$
+a wiêc $a^2+b^2$ daje przy dzieleniu przez 4 resztê 1. Reszty 3 przy dzieleniu przez 4 nie otrzymujemy wiêc dla ¿adnej sumy dwu kwadratów. c. b. d. d.
+\end{proof}
+\begin{twierdzenie}
+Istnieje nieskoñczenie wiele liczb pierwszych formy $4k+1$.
+\end{twierdzenie}
+\begin{proof}
+Przypuœæmy, ¿e wzystkich liczb pierwszych formy $4k+1$ jest skoñczenie wiele: niech to bêd¹ liczby
+\begin{equation}\label{eq:w43}
+p_1,p_2, \ldots,p_n.
+\end{equation}
+
+Niech
+$$N=(2p_1p_2 \ldots p_n)^2+1.$$
+
+Jest to oczywiœcie liczba naturalna formy $4k+1$. Liczba $N$ jako wiêksza od jednoœci i nieparzysta, ma co najmniej jeden czynnik pierwszy $p$, oczywiœcie nie parzysty.
+
+Liczba $p$ jest wiêc formy $4k+1$ lub $4k+3$, gdy¿ ka¿da liczba nieparzysta jest jednej z tych dwu form. Ale $p$ nie mo¿e byæ formy $4k+1$, gdy¿ - jak ³atwo widzieæ - $N$ daje resztê 1 przy dzieleniu przez ka¿d¹ liczbê pierwsz¹ formy $4k+1$, tj. przez ka¿d¹ z liczb (\ref{eq:w43}). A wiêc $p$ jest formy $4k+3$, zatem ró¿ne od 2 i od ka¿dej z liczb (\ref{eq:w43}). Liczba $N$, podzielna przez liczbê pierwsz¹ $p$, jest wiêc sum¹ kwadratów dwu liczb niepodzielnych przez $p$. W myœl lematu 1 wnosimy st¹d, ¿e $p$ samo jest sum¹ dwu kwadratów, a przeto nie jest liczb¹ formy $4k+3$. Doszliœmy wiêc do sprzecznoœci.
+\end{proof}
+\begin{wniosek} Forma $x^2+y^2$ przy naturalnych $x$ i $y$ zawiera nieskoñczenie wiele liczb pierwszych (oczywiœcie nie same tylko liczby pierwsze).
+\end{wniosek}
+
+Udowodnimy teraz, ¿e forma $4k+3$ te¿ zawiera nieskoñczenie wiele liczb pierwszych.
+
+\begin{lemat}
+Ka¿da liczba naturalna formy $4k+3$ ma przynajmniej jeden dzielnik pierwszy tej samej formy.
+\end{lemat}
+\begin{proof}
+Niech $n=4k+3$. Liczba ta ma oczywiœcie dzielniki naturalne formy $4t+3$, gdy¿ sama jest jednym z nich. Oznaczmy przez $p$ najmniejszy z takich dzielników. Poka¿emy, ¿e $p$ jest liczb¹ pierwsz¹, W przeciwnym bowiem razie by³oby $p=d \delta$, gdzie $d$ i $\delta$ s¹ liczbami naturalnymi mniejszymi od $p$ i nieparzystymi, skoro $p$ jest nieparzyste. Obie one nie mog¹ byæ formy $4t+1$ gdy¿ wówczas - jak ³atwo widzieæ - iloczyn ich by³by liczb¹ formy $4t+1$. Zatem co najmniej jedna z liczb $d$ i $\delta$ jest formy $4t+3$. Poniewa¿ dzielniki liczby $p$ s¹ zarazem dzielnikami liczby $n$, wiêc $n$ mia³oby dzielnik naturalny formy $4t+3$ mniejszy od $p$, wbrew okreœleniu liczby $p$.
+\end{proof}
+\begin{twierdzenie}
+Istnieje nieskoñczenie wiele liczb pierwszych formy $4k+3$.
+\end{twierdzenie}
+\begin{proof}
+Przypuœæmy, ¿e jest ich skoñczenie wiele. Niech to bêd¹ liczby $p_1, p_2, \ldots , p_n$ i niech
+$$N=4p_1p_2 \ldots p_n -1.$$
+
+Jest to oczywiœcie liczba naturalna formy $4k+3$. W myœl lematu 3 liczba ta musi mieæ co najmniej jeden dzielnik pierwszy formy $4k+3$. Atoli z definicji liczby $N$ wynika natychmiast, ¿e liczba ta nie jest podzielna przez ¿adn¹ z liczb $p_1, p_2, \ldots , p_n$, czyli przez ¿adn¹ liczbê pierwsz¹ formy $4k+3$. St¹d sprzecznoœæ.
+
+Twierdzenia 9 i 10 mo¿na wypowiedzieæ w postaci: w ka¿dym z postêpów arytmetycznych
+\begin{gather*}
+1, 5, 9, 13, 17, 21, 25, 29, 33, 37, \ldots \\
+3, 7, 11, 15, 19, 23, 27, 31, 35, 39, \ldots
+\end{gather*}
+jest nieskoñczenie wiele liczb pierwszych.
+\end{proof}
+\begin{twierdzenie}
+Istnieje nieskoñczenie wiele liczb pierwszych formy $8k+1$.
+\end{twierdzenie}
+\begin{proof}
+Przypuœcmy, ¿e jest ich skoñczenie wiele. Niech to bêd¹ liczby $p_1, p_2, \ldots , p_n$ i niech
+$$N=2p_1p_2 \ldots p_n$$
+
+Oznaczamy przez $q$ jakikolwwiek dzielnik liczby $N^4+1$, który jest liczb¹ pierwsz¹. Oczywiœcie $(N,q)=1$. Liczba $q$ jest nieparzysta, a wiêc musia³aby byæ jednej z postaci:
+$$8k+1, \quad 8k+3, \quad 8k+5 \quad 8k+7.$$
+
+Nie mo¿e ona jednak byæ postaci $8k+1$, gdy¿ wtedy by³aby jedn¹ z liczb $p_1, p_2, \ldots , p_n$, przez które oczywiœcie liczba $N^4+1$ nie jest podzielna. Liczba $q$ nie mo¿e te¿ byæ postaci $8k+3$ ani $8k+7$, gdy¿ by³aby wtedy zarazem postaci $4t+3$, sk¹d
+$$N^4 \equiv -1(mod \ q), \textrm{ a wiêc } N^{4(2t+1)} \equiv -1(mod \ q)$$
+czyli $N^{2(q-1)} \equiv -1(mod \ q)$, wbrew ma³emu twierdzeniu Fermata (p. \S 1, str. 59). Wreszcie, liczba $q$ nie mo¿e byæ postaci $8k+5$, gdy¿ wtedy by³oby $N^{4(2k+1)} \equiv -1(mod \ q)$ czyli $ a^{q-1} \equiv -1(mod \ q)$, znowu wbrew ma³emu twierdzeniu Fermata.
+
+Mamy wiêc sprzecznoœæ, a tym samym twierdzenie 5 jest dowiedzione.
+\end{proof}
+Podobnie dowodzi siê, ¿e \textit{liczb pierwszych postaci $16k+1$ i, ogólnie, postaci $2^nk+1$ (przy ka¿dym naturalnym $n$) jest nieskoñczenie wiele.}
+
+Udowodnimy jeszcze analogicznie twierdzenie dla formy $6k+1$.
+
+\begin{lemat}
+Ka¿da liczba naturalna $n$ formy $6k+5$ ma przynajmniej jeden dzielnik pierwszy tej formy.
+\end{lemat}
+
+\begin{proof}
+Wystarczy zauwa¿yæ, ¿e liczb¹ $n=6k+5$, jako nieparzysta i niepodzielna przez 3, mo¿?e mieæ tylko dzielniki formy $6k+1$ i $6k+5$. Gdyby w rozk³adzie liczby $n$ (oczywiœcie wiêkszej od jednoœci) na czynniki pierwsze figurowa³y same tylko czynniki formy $6k+1$, to $n$ - jak ³atwo widzieæ - samo by³oby formy $6k+1$, wbrew za³o¿eniu. Wœród czynników pierwszych liczby $n$ (nie wy³¹czaj¹c przypadku, keidy $n$ samo jest liczb¹ pierwsz¹) znajdzie siê wiêc co najmniej jeden czynnik formy $6k+5$, c. b. d. o.
+\end{proof}
+
+\begin{twierdzenie}
+Istnieje nieskoñæzenie wiele liczb pierwszych formy $6k+5$.
+\end{twierdzenie}
+\begin{proof}
+Przypuœæmy, ¿e jest ich skoñczenie wiele. Niech to bêd¹ liczby $p_1, p_2, \ldots , p_n$ i niech
+$$N=6p_1p_2 \ldots p_n - 1$$
+
+$N$ by³oby wiêc liczb¹ naturaln¹ formy $6k+5$, niepodzieln¹ przez ¿adn¹ liczbê pierwsz¹ tej formy, wbrew lematowi 4.
+
+W postêpie arytmetycznym
+$$5, 11, 17, 23, 29, 35, 41, 47, \ldots$$
+istnieje wiêc nieskoñczenie wiele liczb pierwszych. Tym bardziej te¿ istnieje nieskoñczenie wiele lcizb pierwszych w postêpie arytmetycznym.
+$$2, 5, 8, 11, 14, 17, 20, 23, \ldots ,$$
+w którym figuruj¹ przecie¿ wszystkie wyrazy postêpu $6k+5$.
+\end{proof}
+Mamy wiêc
+\begin{wniosek}
+Istnieje nieskoñczenie wiele liczb pierwszych formy $3k+2$.
+\end{wniosek}
+
+Twierdzenia 9-12 s¹ szczególnymi przypadkami tzw.\textit{ twierdzenia Lejeune-Dirichleta} o postêpie arytmetycznym $ak+b$, tj. w ka¿dym ci¹gu nieskoñczonym postaci
+$$a, a+b, a+2b, \ldots ,$$
+gdzie $(a,b)=1$, jest \textit{nieskoñczenie wiele liczb pierwszych}.
+
+Dowód tego twierdzenia, podany po raz pierwszy przez \texttt{Lejeune-Dirichleta} w 1837 r., jest jednym z trudniejszych dowodów teorii liczb i œrodkami elementarnymi uzyskaæ siê nie daje. Pewne jednak przypadki szczególne mo¿na udowodniæ elementarnie. Prócz tych, które stanowi¹ treœæ ostatnich czterech twierdzeñ, udowodnimy jeszcze w Rozdziale XIV, \S 7, kilka innych przypadków tego ogólnego twierdzenia.
+
+{\small 
+\begin{cwiczenie}\textnormal{
+Dowieœæ, opieraj¹c siê na twierdzeniu o postêpie arytmetycznym, ¿e istniej¹ liczby pierwsze, dowolnie daleko \textit{izolowane} z obu stron, tj. ¿e dla ka¿dej liczby naturalnej $n$ istnieje taka liczba pierwsza $p>n$, ¿e ka¿da z liczb $p \pm i$, gdzie $i=1,2, \ldots, n$, jest z³o¿ona.}
+
+\begin{proof}
+Istnieje liczba pierwsza $q>n+1$. Niech
+$$ a = \prod_{i=1}^{q-2}(q^2-i^2).$$
+
+Poniewa¿ liczba $(q-2)!$ jest pierwsza wzglêdem liczby (pierwszej) $q$, wiêc - jak ³atwo widzieæ - liczby $a$ i $q$ s¹ równie¿ wzglêdnie pierwsze. W myœl twierdzenia o postêpie arytmetycznym istnieje liczba pierwsza $p>q$ postaci $ak+q$, sk¹d
+$$p \pm i = ak+q \pm i \qquad \textrm{ dla } i=1,2, \ldots , n.$$
+
+Wobec $q>n+1$ jest (dla tych $i$) $q-1>i$ czyli $q+i>1$. Zarazem $q \pm i$, jako dzielnik liczby $a$, jest dzielnikiem liczby $p \pm i$, ró¿nym od niej wobec $p>q$. Liczba $p \pm i$ jest wiêc z³o¿ona.
+\end{proof}
+\end{cwiczenie}
+\paragraph{Warunki rozk³adalnoœci na sumê dwu kwadratów.} Powróæmy do rozk³adów na sumê dwu kwadratów. Zapytajmy, jakie s¹ warunki konieczne i dostateczne na to, aby liczba naturalna $n$ rozk³ada³a siê na sumê kwadratów dwu liczb ca³kowitych.
+
+OdpowiedŸ na to pytanie daje nastêpuj¹ce
+\begin{twierdzenie}
+Na to, ¿eby liczba naturalna $n$ by³a sum¹ kwadratów dwu liczb ca³kowitych, potrzeba i wystarcza, by $n$ nie zawiera³o w swym rozwiniêciu na czynniki pierwsze ¿adnej liczby pierwszej formy $4k+3$ w potêdze o wyk³adniku nieparzystym.
+\end{twierdzenie}
+\begin{proof}
+Za³ó¿my, ¿e liczba $n$ rozk³ada siê na sumê kwadratów dwu liczb ca³kowitych
+\begin{equation} \label{eq:w44}
+n=a^2+b^2
+\end{equation}
+i niech
+\begin{equation} \label{eq:w45}
+n=p_1^{\alpha_1} p_2^{\alpha_2} \ldots p_r^{\alpha_r}
+\end{equation}
+bêdzie rozwiniêciem liczby $n$ na czynniki pierwsze.
+
+Udowodnimy, ¿e wszystkie czynniki pierwsze formy $4k+3$, o ile w ogóle wchodz¹ do rozwiniêcia liczby $n$, s¹ w nim w potêgach o wyk³adnikach parzystych.
+
+Niech $p$ bêdzie czynnikiem pierwszym formy $4k+3$, figuruj¹cym w rozwiniêciu liczby $n$, i niech
+$$d=(a,b), \quad a=da_1, \quad b=db_1;$$
+liczby $a_1$ i $b_1$ s¹ wzglêdnie pierwsze. Wobec (\ref{eq:w35}) liczba $n$ musi byæ podzielna przez $d^2$; niech $n=d^2n_1$. Gdyby liczba $n_1$ nie zawiera³a w swym rozwiniêciu na czynniki pierwsze liczby $p$, to rozwiniêcie liczby $n$ zawiera³oby oczywiœcie $p$ w potêdze o wyk³adniku parzystym.
+
+Przypuœæmy wiêc, ¿e $n_1$ jest jeszcze podzielne przez $p$. Wzór (\ref{eq:w44}) daje
+\begin{equation} \label{eq:w46}
+n_1=a_1^2+b_1^2,
+\end{equation}
+\end{proof}
+\end{document}

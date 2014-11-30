@@ -1,0 +1,211 @@
+%& --translate-file=cp1250pl
+\documentclass{article}
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\author{Patryk Gradys}
+\title{Matematyka}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Równania}
+Rownanie diofantyczne
+\begin{equation}\label{eq:wz1}
+x^2-yz-1=0
+\end{equation}
+zasluguje na uwage mimo swojej prostoty. Intrygujacy jest mianowicie zwiazek
+miedzy rozwiazaniami tego równania w liczbach naturalnych a operacja najwiekszego
+wspólnego dzielnika, Na fakt ten zwrócil uwage prof. A. Schnitzel, który w
+artykule pisze miedzy innymi: Nie sa znane zadne wzory zalezne od skonczenie
+wielu niezaleznych parametrów, które dawalyby wszystkie rozwiazania równania
+(\ref{eq:wz1}) i nie zawieralaby w jakiejs formie operacji najwiekszego wspólnego dzielnika.
+O ile zawiera dopusci sie te operacje, wystarczy przyjac
+
+\begin{equation}
+x=t_1, \indent y=t_2,t_1^2-1),  \indent z=\frac{(t_1^2-1)}{(t_2,t_1^2-1)}
+\end{equation}
+
+Aby wyznaczyc wzory rozwiazan równania (\ref{eq:wz1}), czyniac zadosc wyzej postawionym
+warunkom, wystarczyloby zatem zdefiniowac operacje najwiekszego
+wspólnego dzielnika za pomoca odpowiednich dzialan na liczbach calkowitych.
+W niniejszej nocie zdefiniujemy te operacje i wyznaczymy wzory rozwiazan równania
+(\ref{eq:wz1}) czyniace zadosc wyzej postawionym warunkom.
+
+Niech $m, n$ beda danymi liczbami naturalnymi. W zbiorze liczb calkowitych
+okreslamy funkcje $f_m^{(n)}$:
+
+\begin{equation*}
+f_m^{(n)}(x)=(x-m) \cdot (x-2m) \cdot \ldots \cdot (x-nm).
+\end{equation*}
+
+Funkcja ta ma nastepujaca wlasnosc: dla kazdej liczby naturalnej $k \le m$
+
+\begin{equation}\label{eq:wz2}
+f_m^{(n)}(kn)=0 \Leftrightarrow [m,n] \mid kn,
+\end{equation}
+
+gdzie $[m, n]$ jest najmniejsza wspólna wielokrotnoscia liczb naturalnych $m$ i $n$.
+Uwaga: przez liczby naturalne rozumiemy tu liczby calkowite wieksze od zera.
+Niech z kolei $F$ bedzie funkcja okreslona w zbiorze liczb calkowitych nastepujacym
+wzorem
+
+\begin{equation*}
+F(x)=\frac{1}{2}+\frac{1}{2}(-1)^{2^{x^2}}.
+\end{equation*}
+
+Tak okreslona funkcja ma wlasnosc:
+
+\begin{equation}\label{eq:wz3}
+F(x)=\left\{
+\begin{array}{ccc}
+1, & \mathrm{gdy} & x \ne 0 \\
+0, & \mathrm{gdy} & x = 0
+\end{array}
+\right.
+\end{equation}
+
+Dla dowolnych liczb naturalnych $m, n$:
+
+\begin{equation}
+(m, n) = m - \sum_{k=1}^{n} F\left(f_m^{(n)}(kn)\right)
+\end{equation}
+
+Dowód. Niech $m, n$ bêd¹ danymi liczbami naturalnymi. Zgodnie z w³asnoœci¹
+(\ref{eq:wz2}), dla ka¿dej liczby naturalnej $k \le m$ mamy
+
+\begin{equation}
+f_m^{(n)}(kn)=0 \Leftrightarrow \frac{[m,n]}{n}\mid k.
+\end{equation}
+St¹d zgodnie z \ref{eq:wz3}, otrzymujemy
+
+\begin{equation}
+f_m^{(n)}(kn)=1 \Leftrightarrow \frac{[m,n]}{n} \mid k.
+\end{equation}
+oraz
+\begin{equation}
+f_m^{(n)}(kn)=0 \Leftrightarrow \frac{[m,n]}{n} \mid k.
+\end{equation}
+dla dowolnej liczby naturalnej $k/lem$. A poniewa¿ wszystkich liczb naturalnych
+$/lem$, które s¹ wielokrotnoœciami liczby $[m, n]/n$ jest doklanie $(m, n)$, wiêc
+
+\begin{equation}
+\sum_{k=1}^m F\left(f_m^{(n)}(kn)\right)=m-(m,n),
+\end{equation}
+co koñczy dowód.
+
+Podane wy¿ej wzory rozwi¹zania równania \ref{eq:wz1} nie zawieraj¹ wprawdzie operacji najwiêkszego wspólnego dzielnika, ale oprócz dzia³añ +, -, $\cdot$, 1 oraz potêgowania $x^y$ dla $y \ge 0$, zawieraj¹ operatory dodawania i mno¿enia zmiennej liczby wyrazów: tzn. operatory $\Sigma$.
+
+\section{Uk³ad Cramera}
+Uk³ad $n$ równañ o $n$ niewiadomych
+\begin{equation*}
+\left\{ 
+\begin{array}{l}
+a_{11}x_1+a_{12}x_2+ \ldots +a_{1n}x_n \indent =b_1\\
+a_{21}x_1+a_{22}x_2+ \ldots +a_{2n}x_n \indent =b_2\\
+\dotfill \\
+a_{n1}x_1+a_{n2}x_2+ \ldots +a_{nn}x_n \indent =b_2\\
+\end{array}
+\right.
+\end{equation*}
+nazywamy uk³adem Cramera, gdy wyznacznik jego macierzy det $A \ne 0$.
+
+Uk³ad Cramera jest uk³adem oznaczonym, czyli ma dok³adnie jedno rozwi¹zanie $x = (x_1, x_2, \ldots , x_n)$, którego wspó³rzêdne okreœlone s¹ wzorem
+
+\begin{equation*}
+x_j=\frac{det A_j}{det A}, \indent j=1,2,\ldots,n
+\end{equation*}
+gdzie $A_j$ jest macierz¹ kwadratow¹ stopnia $n$ powsta³¹ z macierzy $A$ przez
+zast¹pienie $j$-tej kolumny kolumn¹ wyrazów wolnych, tzn.
+
+\begin{equation*}
+\left[
+\begin{array}{cccccccc}
+a_{11} & a_{12} & \ldots & a_{1j-1} & b_1 & a_{1j+1} & \ldots & a_{1n} \\
+a_{21} & a_{22} & \ldots & a_{1j-1} & b_2 & a_{1j+1} & \ldots & a_{2n} \\
+\dotfill \\
+a_{n1} & a_{n2} & \ldots & a_{nj-1} & b_n & a_{nj+1} & \ldots & a_{nn} 
+
+\end{array}
+\right].
+\end{equation*}
+
+Rozwi¹¿emy uk³ad równañ
+\begin{equation*}
+\left\{
+\begin{array}{l}
+x_1+2x_2+3x_3=6\\
+4x_1+x_2+4x_3=9\\
+3x_1+5x_2+2x_3=5
+\end{array}
+\right.
+\end{equation*}
+
+Macierz¹ tego uk³adu jest
+\begin{equation*}
+A=
+\left[
+\begin{array}{ccc}
+1 & 2 & 3 \\
+4 & 1 & 4 \\
+3 & 5 & 2
+\end{array}
+\right].
+\end{equation*}
+
+Jej wyznacznik jest równy
+\begin{equation*}
+det A=
+\left|
+\begin{array}{ccc}
+1 & 2 & 3 \\
+4 & 1 & 4 \\
+3 & 5 & 2
+\end{array}
+\right|
+=2+24+60-9-20-16=41\ne0
+\end{equation*}
+Zatem jest to uk³ad Cramera, który na podstawie powy¿szego twierdzenia ma
+dok³adnie jedno rozwi¹zanie $x = (x_1, x_2, x_3)$, gdzie
+\begin{equation*}
+x_1=\frac{\mathrm{det} A_1}{\mathrm{det} A}, \indent x_2=\frac{\mathrm{det} A_2}{\mathrm{det} A}, \indent x_3=\frac{\mathrm{det} A_3}{\mathrm{det} A},
+\end{equation*}
+
+\begin{equation*}
+\mathrm{det} A_1=
+\left|
+\begin{array}{ccc}
+6 & 2 & 3 \\
+9 & 1 & 4 \\
+5 & 5 & 2 \\
+\end{array}
+\right|
+= 16, \indent
+\mathrm{det} A_1=
+\left|
+\begin{array}{ccc}
+1 & 6 & 3 \\
+4 & 9 & 4 \\
+3 & 5 & 2
+\end{array}
+\right|
+= 1, \indent
+\mathrm{det} A_1=
+\left|
+\begin{array}{ccc}
+1 & 2 & 6 \\
+4 & 1 & 9 \\
+3 & 5 & 5
+\end{array}
+\right|
+= 76, \indent
+\end{equation*}
+Zatem jedynym rozwi¹zaniem tego uk³adu jest punkt $x=\frac{16}{41},\frac{1}{41}, \frac{76}{46}$.
+
+\end{document}
+
+
+

@@ -1,0 +1,109 @@
+%& --translate-file=cp1250pl
+\documentclass{article}
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+
+\newtheorem{twierdzenie}{Twierdzenie}
+\newtheorem{definicja}{Definicja}
+
+\begin{document}
+\section{Matematyka -- sk³adanie wzorów}
+
+
+Najbardziej popularne œrodowisko matematyczne \texttt{align} z numeracj¹ 
+\begin{align*}
+|(D^\alpha_{a+}x_u)(t)|&\leqslant ||A||_{L^\infty}|(I^\alpha_{a+}\varphi^*_u)(t)|+r_1+|v(t)|\leqslant\\
+&\leqslant||A||_{L^\infty}(I^\alpha_{a+}|S(\varphi^*_u)|)(t)+r_1+|v(t)|\leqslant\\
+%||A||_{L^\infty}(I^\alpha_{a+}|S(\varphi^*_u)|)(t)+R_1
+&\leqslant ||A||_{L^\infty}(I^\alpha_{a+}(||A||_{L^\infty}I^\alpha_{a+}|\varphi^*_u|+r_1+|v|))(t)+r_1+|v(t)|=\\
+&=||A||^2_{L^\infty}(I^{2\alpha}_{a+}|S(\varphi^*_u)|)(t)+||A||_{L^\infty}(I^\alpha_{a+}r_1)+r_1+|v(t)|.
+\end{align*}
+i z numeracj±
+\begin{align}
+x+y &=2 \\
+3x-2y&=-5
+\end{align}
+
+Bardzo czêsto wykorzystywane jest tak¿e otoczenie \texttt{split} (UWAGA: nie jest ono œrodowiskiem matematycznym. Wzór sk³adamy analogicznie jak w otoczeniu \texttt{align}, nastêpnie umieszczamy w œrodowisku matematycznym, np. \texttt{equation}).
+\begin{equation}
+\begin{split}
+x = 5\qquad y=3\\
+z=6\qquad  k=8
+\end{split}
+\end{equation}
+
+
+Otoczenie \texttt{eqnarray} z numeracj¹ wzorów 
+\begin{eqnarray}
+x+y &=&2 \\
+3x-2y&=&-5
+\end{eqnarray}
+
+Otoczenie \texttt{alignat} z numeracj¹ 
+\begin{alignat}{2}
+x+y  &=&\ &2 \\
+3x-2y&=&-&5
+\end{alignat}
+
+Otoczenie \texttt{gather} z numeracj¹
+\begin{gather}
+x = 5\qquad y=3\\
+z=6\qquad  k=8
+\end{gather}
+
+Otocznie \texttt{multiline} z numeracj¹ 
+\begin{multline}
+(D^{\alpha}_{a^+} y)(t)=A(t)y(t)+B(t)u(t),\\
+(I^{1-\alpha}_{a^+}y)(a)=y_0\\
+u(t)\in M\subset\mathbb{R}^m,\quad t\in [a,b]
+\end{multline}
+
+Wszystkie powy¿sze otoczenia maj¹ wersjê bez numeracji (,,z gwiazdk¹").
+
+
+\section{Definicje, twierdzenia, itp.}
+
+
+\begin{definicja}
+
+Niech $X$ bêdzie przestrzeni¹ i niech $T:X\rightarrow X$. Punkt $w\in X$ nazywamy punktem sta³ym odwzorowania $T$, 
+jeœli $T(w) = w$.
+\end{definicja}
+
+\begin{definicja}[Berge \cite{Berg1963}]\label{def:berge}
+Niech $X$ i $Y$ bêd¹ dowolnymi zbiorami. Jeœli ka¿demu elementowi $x\in X$ mo¿emy przyporz¹dkowaæ podzbiór $T(x)\subset Y$, to powiemy wtedy, ¿e to przyporz¹dkowanie $x\rightarrow T(x)$ jest odwzorowaniem przestrzeni $X$ w $Y$. Dla dowolnego $x\in X$ zbiór $T(x)$ nazywamy obrazem $x$ przy odwzorowaniu $T$ i oznaczamy go $T(x)$ lub $Tx$.\\
+Zbiór $X^{*}=\{x\in X :T(x)\neq \emptyset\}$ nazywamy dziedzin¹ odwzorowania, zaœ zbiór $Y^{*}=\cup _{x\in X}T(x)$ nazywamy zbiorem wartoœci odwzorowania $T$. Mówimy wtedy, ¿e $T$ zdefiniowana na $X^{*}$ jest odwzorowaniem $X$ na $Y^{*}$.
+\end{definicja}
+
+Korzystaj¹c z definicji \ref{def:berge}.
+\begin{twierdzenie}[Banach \cite{Bana1922}]\label{twBanacha}
+Niech $(X,d)$ bêdzie zupe³n¹ przestrzeni¹ metryczn¹ i niech $T:X\rightarrow X$ bêdzie odwzorowaniem takim, ¿e
+\begin{equation}\label{warBanacha}
+\exists_{0\leq \lambda <1}\;\forall_{x,y\in X}\;\left\{d(T(x),T(y))\leq 
+\lambda\cdot d(x,y)\right\}\text{.}
+\end{equation}
+Wówczas:
+\begin{enumerate}
+\item [\textnormal{(i)}] odwzorowanie $T$ ma dok³adnie jeden punkt sta³y $w\in X$;
+\item [\textnormal{(ii)}] ci¹g $\{T^{[n]}(w^0)\}_{n\in \mathbb{N}}$ jest zbie¿ny do $w$ dla dowolnego $w^0\in X$.
+\end{enumerate}
+\end{twierdzenie}
+
+
+
+
+
+
+\begin{thebibliography}{99}
+\bibitem{Bana1922} S. Banach, Sur les op\'{e}rations dans les ensembles abstraits
+et leurs applications aux \'{e}quations int\'{e}grales, Fund. Math. \textbf{3}(1922)
+133-181.
+
+\bibitem{Berg1963} C. Berge, Topological Spaces, Oliver $\And $ Boyd, Edinburgh,
+1963.
+\end{thebibliography}
+
+
+\end{document}
